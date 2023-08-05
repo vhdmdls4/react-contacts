@@ -87,13 +87,6 @@ function AddContactForm() {
   return (
     <Card className="custom-card">
       <CardBody>
-        <Button
-          onClick={() =>
-            console.log(JSON.parse(localStorage.getItem("contacts")))
-          }
-        >
-          Clique
-        </Button>
         <h2>Add New Contact</h2>
         <Form onSubmit={handleSubmit}>
           <FormGroup floating>
