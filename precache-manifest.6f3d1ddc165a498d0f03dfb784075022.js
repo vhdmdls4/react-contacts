@@ -1,10 +1,10 @@
 self.__precacheManifest = [
   {
-    "revision": "6c8ed4b6a6586e49edd1",
-    "url": "/react-contacts/static/css/main.b4faa9ce.chunk.css"
+    "revision": "02a74fe4e36e06d36166",
+    "url": "/react-contacts/static/css/main.498a4984.chunk.css"
   },
   {
-    "revision": "6c8ed4b6a6586e49edd1",
+    "revision": "02a74fe4e36e06d36166",
     "url": "/react-contacts/static/js/main.242823ce.chunk.js"
   },
   {
@@ -24,7 +24,7 @@ self.__precacheManifest = [
     "url": "/react-contacts/static/media/logo.06e73328.svg"
   },
   {
-    "revision": "bd9febe4fa8e34cdf6af52081a0eaf07",
+    "revision": "a191fbbd917bfd732397a0fc499ed679",
     "url": "/react-contacts/index.html"
   }
 ];
