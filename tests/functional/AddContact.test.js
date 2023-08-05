@@ -1,6 +1,6 @@
 import React from "react";
 import { render, screen, fireEvent } from "@testing-library/react";
-import "@testing-library/jest-dom/extend-expect"; // For extended DOM matchers
+import "@testing-library/jest-dom/extend-expect";
 import AddContactForm from "./AddContactForm";
 
 describe("AddContactForm", () => {
@@ -13,7 +13,6 @@ describe("AddContactForm", () => {
     const pictureInput = getByLabelText("Picture");
     const addButton = getByText("Add Contact");
 
-    // Fill in the form inputs
     fireEvent.change(nameInput, { target: { value: "John Doe" } });
     fireEvent.change(contactInput, { target: { value: "12345678" } });
     fireEvent.change(emailInput, { target: { value: "john.doe@example.com" } });
@@ -21,11 +20,11 @@ describe("AddContactForm", () => {
       target: { files: [new File([""], "test.jpg", { type: "image/jpeg" })] },
     });
 
-    // Submit the form
     fireEvent.click(addButton);
 
-    // Check if the alert message is displayed
     const alertMessage = screen.getByText("Contato criado");
     expect(alertMessage).toBeInTheDocument();
   });
 });
+
+//generic tests generate by chatGPT
